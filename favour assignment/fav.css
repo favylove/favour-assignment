@@ -1,0 +1,142 @@
+:root{
+    --blue-color:blue;
+    --grey-colour:grey;
+    --secondary-color:rgba(19, 67, 163, 0.81);
+    --reg-padding:10px;
+}
+
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 1rem;
+}
+
+main{
+    width: 100vw;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.myimage{
+    width: 100%;
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.grey-text{
+    color: var(--grey-colour);
+}
+.secondary-color{
+    color: var(--secondary-color);
+}
+
+.icon{
+    height: 60px;
+    width: 60px;
+}
+
+.details{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.img-sect{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.show-in-mobile{
+    position: absolute;
+    bottom:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    background-color: rgba(187, 187, 187, 0.656);
+    border-radius: 30px;
+    padding: .5rem;
+}
+
+.show-in-desktop{
+    display: none;
+}
+
+.round-30{
+    border-radius: 30px;
+    padding: var(--reg-padding);
+    background-color: white;
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+.skill{
+    padding: var(--reg-padding);
+    background-color: white;
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+    border-radius: 30px;
+}
+
+.focus:focus, .focus:hover{
+    color: white;
+    background-color: var(--blue-color);
+    border: none;
+}
+
+@media (min-width:300px) and (max-width:600px){
+    main{
+        max-width: 500px;
+    }
+    .myimage{
+        max-width: 500px;
+    }
+}
+
+@media (min-width:600px){
+    main{
+        width: 100vw;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+    }
+    .hero-section{
+        width: 30%;
+    }
+    .second-section{
+        width: 70%;
+    }
+    .show-in-mobile{
+        display: none;
+    }
+    .show-in-desktop{
+        display: block;
+    }
+}
+
+
+
+
+
+/* 
+class selectors = .className
+id selectors = #id
+tag selectors = tag (e.g. p)
+relative selectors = div p .class
+pseudoselectors = :focus
+*/
